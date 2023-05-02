@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioSockets_Donoso", "EjercicioSockets_Donoso\EjercicioSockets_Donoso.csproj", "{383A46BA-BEB3-4AB6-AAD7-6B69EF5FEE61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteSocketUtils", "ClienteSocketUtils\ClienteSocketUtils.csproj", "{5C0C9804-DB89-426C-8CCB-53303A1BD76D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{383A46BA-BEB3-4AB6-AAD7-6B69EF5FEE61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{383A46BA-BEB3-4AB6-AAD7-6B69EF5FEE61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{383A46BA-BEB3-4AB6-AAD7-6B69EF5FEE61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{383A46BA-BEB3-4AB6-AAD7-6B69EF5FEE61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C0C9804-DB89-426C-8CCB-53303A1BD76D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C0C9804-DB89-426C-8CCB-53303A1BD76D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C0C9804-DB89-426C-8CCB-53303A1BD76D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C0C9804-DB89-426C-8CCB-53303A1BD76D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {464A2FC5-617E-47AB-AE64-322865D7D575}
+	EndGlobalSection
+EndGlobal
