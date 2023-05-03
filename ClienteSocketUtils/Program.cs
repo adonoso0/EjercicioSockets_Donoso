@@ -17,17 +17,15 @@ namespace ClienteSocketUtils
 
             ClienteSocket clienteSocket = new ClienteSocket(ip, puerto);
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Conectandose al servidor {0} en el puerto {1}", ip, puerto);
+            Console.WriteLine("Conectando a {0}:{1}", ip, puerto);
             if (clienteSocket.Conectar())
             {
-                //Comunicarme
-                Console.WriteLine("Cliente Conectado..");
+                Console.WriteLine("Conectado");
 
-                //Hacer el protocolo de comunicacion
                 string mensaje = "";
                 while (mensaje.ToLower() != "chao")
                 {
-                    Console.WriteLine("Diga lo que quiere decir:");
+                    Console.WriteLine("Escriba el mensaje");
                     mensaje = Console.ReadLine().Trim();
                     Console.WriteLine("C:{0}", mensaje);
                     clienteSocket.Escribir(mensaje);
@@ -42,7 +40,6 @@ namespace ClienteSocketUtils
             }
             else
             {
-                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Error de conexion");
             }
 

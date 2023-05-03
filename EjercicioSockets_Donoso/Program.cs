@@ -19,26 +19,26 @@ namespace EjercicioSockets_Donoso
             {
                 while (true)
                 {
-                    //Obtener clientes
+                    //Esperando clientes
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("Esperando Clientes...");
                     if (servidor.ObtenerCliente())
                     {
                         Console.ForegroundColor = ConsoleColor.Cyan;
                         Console.WriteLine("Conexion Establecida!");
-                        //Protocolo de comunicacion
                         string mensaje = "";
                         while (mensaje.ToLower() != "chao")
                         {
-                            //Leo el mensaje del Cliente
+                            //Se lee el mensaje del cliente
                             mensaje = servidor.Leer();
-                            Console.WriteLine("C:{0}", mensaje);
+                            Console.WriteLine("Cliente:[{0}]", mensaje);
                             if (mensaje.ToLower() != "chao")
                             {
                                 //El cliente espera una respuesta
-                                Console.WriteLine("Digame lo que quiere decir guruguru");
+                                Console.WriteLine("Escriba su respuesta: ");
+
                                 mensaje = Console.ReadLine().Trim();
-                                Console.WriteLine("S:{0}", mensaje);
+                                Console.WriteLine("Mensaje enviado: {0}", mensaje);
                                 servidor.Escribir(mensaje);
                             }
                         }
@@ -50,7 +50,6 @@ namespace EjercicioSockets_Donoso
             }
             else
             {
-                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("No es posible iniciar servidor");
                 Console.ReadKey();
             }
