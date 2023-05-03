@@ -27,10 +27,9 @@ namespace EjercicioSockets_Donoso.Comunicacion
             {
                 //1. Crear un socket
                 this.servidor = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                //2. Tomar control del puerto
-
+                //2. Definir puerto
                 this.servidor.Bind(new IPEndPoint(IPAddress.Any, this.puerto));
-                //3. Definir cuantos clientes atendere
+                //3. Definir cantidad de clientes simultáneos
                 this.servidor.Listen(10);
                 return true;
             }
